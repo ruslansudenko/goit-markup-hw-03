@@ -83,7 +83,7 @@ img {
 
 .menu {
   display: flex;
-  margin-left: 76px;
+
   gap: 40px;
 }
 
@@ -91,6 +91,7 @@ img {
   margin-left: 0px;
   margin-top: 25.5px;
   margin-bottom: 25.5px;
+  margin-right: 75px;
 
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -127,11 +128,6 @@ img {
   align-items: center;
 }
 
-.adress-list {
-  display: flex;
-
-  gap: 40px;
-}
 .adress-link {
   font-size: 16px;
   line-height: 1.5;
@@ -148,6 +144,7 @@ img {
 /* ========================HERO========================= */
 
 .hero-btn {
+  border: none;
   display: block;
   background-color: var(--main-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -199,6 +196,10 @@ img {
   margin: -1px;
 }
 
+.value-item {
+  width: calc((100% - 72px) / 4);
+}
+
 .value-list {
   display: flex;
   gap: 24px;
@@ -210,6 +211,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  margin-bottom: 8px;
 }
 
 .value-text {
@@ -256,6 +258,10 @@ img {
   padding-bottom: 120px;
 }
 
+.employee-card {
+  padding: 32px 16px;
+}
+
 .team-list {
   display: flex;
   flex-wrap: wrap;
@@ -273,16 +279,8 @@ img {
   color: var(--title-color);
 }
 
-.employee-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .picture-title {
+  text-align: center;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -292,6 +290,7 @@ img {
 }
 
 .picture-text {
+  text-align: center;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -307,8 +306,8 @@ img {
 }
 
 .logo-light {
-  display: block;
-  margin-bottom: 17px;
+  display: inline-block;
+  margin-bottom: 16px;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -331,6 +330,12 @@ img {
 }
 
 /* ================Portfolio======================= */
+
+.portfolio-container {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
 .portfolio-btn {
   background-color: var(--light-purple);
   color: var(--main-blue);
@@ -338,25 +343,28 @@ img {
   border-radius: 4px;
   height: 48px;
   min-width: 69px;
-  padding: 0 24px;
+  padding: 12px 24px;
 }
 
-.btn-container {
+/* .btn-container {
   display: flex;
   padding-top: 96px;
   padding-bottom: 72px;
   justify-content: center;
-}
+} */
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background-color: var(--hover-color);
   color: var(--white);
+  border: 1px solid transparent;
 }
 
 .portfolio-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
 }
 
 .portfolio-img-list {
@@ -376,12 +384,12 @@ img {
   margin-bottom: 48px;
 }
 
-.picture-title {
+.pictures-title {
   margin-top: 32px;
   margin-left: 16px;
 }
 
-.picture-text {
+.pictures-text {
   margin-top: 8px;
   margin-bottom: 32px;
   margin-left: 16px;
