@@ -91,7 +91,7 @@ img {
   margin-left: 0px;
   margin-top: 25.5px;
   margin-bottom: 25.5px;
-  margin-right: 75px;
+  margin-right: 76px;
 
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -331,7 +331,7 @@ img {
 
 /* ================Portfolio======================= */
 
-.portfolio-container {
+.portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -385,12 +385,23 @@ img {
 }
 
 .pictures-title {
-  margin-top: 32px;
-  margin-left: 16px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
 }
 
 .pictures-text {
-  margin-top: 8px;
-  margin-bottom: 32px;
-  margin-left: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.app-links {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
